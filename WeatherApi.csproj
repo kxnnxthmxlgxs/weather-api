@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>20e0bc2e-b427-4537-b0f4-4b709fdeacd5</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="10.0.12" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.3.0" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Compile Remove="WeatherApi.Tests\**" />
+    <Compile Remove="WeatherApi.Tests/**" />
+    <Content Remove="WeatherApi.Tests\**" />
+    <Content Remove="WeatherApi.Tests/**" />
+    <EmbeddedResource Remove="WeatherApi.Tests\**" />
+    <EmbeddedResource Remove="WeatherApi.Tests/**" />
+    <None Remove="WeatherApi.Tests\**" />
+    <None Remove="WeatherApi.Tests/**" />
+  </ItemGroup>
+
+</Project>
